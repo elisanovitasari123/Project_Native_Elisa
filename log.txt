@@ -1,0 +1,2 @@
+Received POST data: id=hjkj, name=jgthhj, phone=566, address=ghj
+Received POST data: id=dkdk, name=dksk, phone=1646, address=sbsj
