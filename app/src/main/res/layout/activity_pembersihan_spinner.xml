@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/bgpem2">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="136dp"
+        android:text="Tambah Data"
+        android:textAlignment="center"
+        android:textColor="@color/hijau"
+        android:textSize="30sp"  />
+
+    <!-- Room Name and Spinner -->
+    <LinearLayout
+        android:id="@+id/roomLayout"
+        android:layout_width="373dp"
+        android:layout_height="98dp"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="3dp"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/namaKamar"
+            android:layout_width="298dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:padding="16dp"
+            android:textColor="@color/hijau"
+            android:hint="Jenis Kamar" />
+
+        <Spinner
+            android:id="@+id/spinner_namaKamar"
+            android:layout_width="16dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/down2"
+            android:padding="16dp"/>
+    </LinearLayout>
+
+    <!-- Customer Name and Spinner -->
+
+    <!-- Check-in Date -->
+    <LinearLayout
+        android:id="@+id/karyawanLayout"
+        android:layout_width="373dp"
+        android:layout_height="98dp"
+        android:layout_below="@id/roomLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="3dp"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/nama_karyawan"
+            android:layout_width="298dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:padding="16dp"
+            android:textColor="@color/hijau"
+            android:hint="Nama Karyawan" />
+
+        <Spinner
+            android:id="@+id/KaryawanSpinner"
+            android:layout_width="16dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/down2"
+            android:padding="16dp"/>
+    </LinearLayout>
+
+    <!-- Description -->
+
+    <!-- Button for Submitting Booking -->
+
+    <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="94dp"
+        android:layout_below="@id/karyawanLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-11dp"
+        android:layout_marginEnd="3dp"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/tanggal"
+            android:layout_width="298dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:hint="Tanggal"
+            android:padding="16dp"
+            android:textColor="@color/hijau" />
+
+        <ImageView
+            android:id="@+id/check_in_dateCalender"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/calendar"
+            android:clickable="true"
+            android:focusable="false"
+            android:inputType="none"
+            android:padding="16dp"
+            android:textColor="@color/hijau" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/deskripsi"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Deskripsi"
+        android:padding="16dp"
+        android:textColor="@color/hijau" />
+
+    <Button
+        android:id="@+id/saveBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deskripsi"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/radius_button"
+        android:padding="16dp"
+        android:text="Simpan Data"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

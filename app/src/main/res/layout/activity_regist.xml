@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg6"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_marginLeft="100dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        card_view:srcCompat="@drawable/logovilla2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="20dp"
+        card_view:cardBackgroundColor="#a6ffffff"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="0dp"
+        card_view:cardUseCompatPadding="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Registrasi User"
+                android:fontFamily="@font/poppins"/>
+
+            <EditText
+                android:id="@+id/EditUsername"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="55dp"
+                android:inputType="textPersonName"
+                android:textSize="15dp"
+                android:fontFamily="@font/montserrat"
+                android:elevation="5dp"
+                android:background="@drawable/radius_formwhiteblur"
+                android:hint="Username" />
+
+            <EditText
+                android:id="@+id/EditPassword"
+                android:layout_below="@id/EditUsername"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="55dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/montserrat"
+                android:elevation="5dp"
+                android:background="@drawable/radius_formwhiteblur"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:hint="Password" />
+
+            <EditText
+                android:id="@+id/EditPassword2"
+                android:layout_below="@id/EditPassword"
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="55dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/montserrat"
+                android:elevation="5dp"
+                android:background="@drawable/radius_formwhiteblur"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:hint="Confirm Password" />
+
+            <Button
+                android:id="@+id/buttonRegist"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EditPassword2"
+                android:background="@drawable/radius_button"
+                android:textColor="#fff"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="15dp"
+                android:text="Registrasi" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textbelum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/card"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="Sudah Memiliki Akun?"
+        android:fontFamily="@font/montserratthin"/>
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_below="@id/card"
+        android:layout_toRightOf="@id/textbelum"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text=" Login"
+        android:fontFamily="@font/montserrat"/>
+
+
+</RelativeLayout>

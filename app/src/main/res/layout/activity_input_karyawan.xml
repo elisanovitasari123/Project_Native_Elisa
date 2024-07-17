@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgbooking2">
+
+
+    <TextView
+        android:id="@+id/textjudulKaryawan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Tambah Karyawan"
+        android:textColor="@color/white"
+        android:textSize="34dp" />
+
+    <EditText
+        android:id="@+id/namaKaryawan"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textjudulKaryawan"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Nama Karyawan"
+        android:paddingLeft="20dp"
+        android:textSize="15dp" />
+
+
+    <EditText
+        android:id="@+id/no_hp"
+        style="?attr/spinnerDropDownItemStyle"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/namaKaryawan"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:elevation="5dp"
+        android:hint="Nomor Telefon"
+        android:fontFamily="@font/montserrat"
+        android:paddingLeft="15dp"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_below="@id/no_hp"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textSize="15dp"
+        android:elevation="5dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:hint="Alamat"/>
+
+
+    <Button
+        android:id="@+id/btnSaveK"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/alamat"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/radius_button"
+        android:fontFamily="@font/poppins"
+        android:text="Simpan Data"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

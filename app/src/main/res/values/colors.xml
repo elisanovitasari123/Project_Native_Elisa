@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#0064d2</color>
+    <color name="purple_500">
+        #0064d2</color>
+    <color name="purple_700">#262626</color>
+    <color name="teal_200">#0064d2</color>
+    <color name="teal_700">#0064d2</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="hijau">#324644</color>
+    <color name="goal">#c4aa7d</color>
+    <color name="lavender">#8692f7</color>
+    <color name="army">#345830</color>
+</resources>

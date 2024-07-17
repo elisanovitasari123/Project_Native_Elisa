@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgbooking2">
+
+
+    <TextView
+        android:id="@+id/textjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Tambah Fasilitas"
+        android:textColor="@color/white"
+        android:textSize="34dp" />
+
+    <EditText
+        android:id="@+id/namaFasilitas"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textjudul"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Nama Fasilitas"
+        android:paddingLeft="20dp"
+        android:textSize="15dp" />
+
+
+    <EditText
+        android:id="@+id/kategori"
+        style="?attr/spinnerDropDownItemStyle"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/namaFasilitas"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:elevation="5dp"
+        android:hint="Kategori"
+        android:fontFamily="@font/montserrat"
+        android:paddingLeft="15dp"
+        android:textSize="15dp" />
+
+
+
+    <Button
+        android:id="@+id/btnSaveFasilitas"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/kategori"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/radius_button"
+        android:fontFamily="@font/poppins"
+        android:text="Simpan Data"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

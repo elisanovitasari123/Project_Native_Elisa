@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgbooking2">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSaveKamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="645dp"
+        android:layout_toStartOf="@+id/fabhapusKamar"
+        android:backgroundTint="#324644"
+        android:src="@drawable/save" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabhapusKamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="250dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="31dp"
+        android:backgroundTint="#324644"
+        android:src="@drawable/delete" />
+
+
+    <TextView
+        android:id="@+id/textjudulKamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Update Room"
+        android:textColor="@color/white"
+        android:textSize="34dp" />
+
+    <EditText
+        android:id="@+id/namaKamar"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textjudulKamar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Nama Kamar"
+        android:paddingLeft="20dp"
+        android:textSize="15dp" />
+
+
+    <EditText
+        android:id="@+id/tipeKamar"
+        style="?attr/spinnerDropDownItemStyle"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/namaKamar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:elevation="5dp"
+        android:hint="Tipe Kamar"
+        android:fontFamily="@font/montserrat"
+        android:paddingLeft="15dp"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/hargaKamar"
+        android:layout_below="@id/tipeKamar"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textSize="15dp"
+        android:elevation="5dp"
+        android:background="@drawable/radius_formwhiteblur"
+        android:hint="Harga"/>
+
+
+</RelativeLayout>

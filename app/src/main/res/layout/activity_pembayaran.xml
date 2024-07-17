@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextCustomerID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer ID" />
+
+    <EditText
+        android:id="@+id/editTextKamarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kamar ID" />
+
+    <EditText
+        android:id="@+id/editTextMetodePembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Metode Pembayaran" />
+
+    <EditText
+        android:id="@+id/editTextCatatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Catatan" />
+
+    <EditText
+        android:id="@+id/editTextTanggalPembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Pembayaran" />
+
+    <Button
+        android:id="@+id/buttonSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan" />
+</LinearLayout>

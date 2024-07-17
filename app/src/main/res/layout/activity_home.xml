@@ -1,0 +1,335 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".HomeActivity">
+
+    <!-- ImageButton for Profile at the Top -->
+    <!-- Ubah ke nama file icon user yang Anda gunakan -->
+
+    <!-- Existing elements of your layout -->
+
+    <!-- Atau gunakan "fitCenter" -->
+
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="334dp"
+        android:background="@drawable/baseline_account_circle_24"
+        android:contentDescription="Profile"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_account_circle_24" />
+
+    <ImageView
+        android:id="@+id/imgBg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/villasavana" />
+
+    <ImageView
+        android:id="@+id/img2Bg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="290dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logovilla2" />
+
+
+    <Button
+        android:id="@+id/btnCustomer2"
+        android:layout_width="55dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/imgBg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="290dp"
+        android:background="@drawable/cus"
+        android:drawablePadding="-40dp"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnVilla2"
+        android:layout_width="55dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/imgBg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="160dp"
+        android:background="@drawable/vill"
+        android:drawablePadding="-40dp"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnRoom2"
+        android:layout_width="55dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/imgBg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="286dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/room"
+        android:drawablePadding="-40dp"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+    <Button
+        android:id="@+id/btnFasilitas"
+        android:layout_width="55dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/imgBg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="221dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="99dp"
+        android:background="@drawable/fasilitas"
+        android:drawablePadding="-40dp"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnBooking"
+        android:layout_width="55dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/imgBg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="159dp"
+        android:background="@drawable/booking"
+        android:drawablePadding="-40dp"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnPembersihan"
+        android:layout_width="55dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/imgBg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="262dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/pembersihan"
+        android:drawablePadding="-40dp"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnKFasilitas"
+        android:layout_width="55dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/imgBg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="283dp"
+        android:background="@drawable/pengelolaan"
+        android:drawablePadding="-40dp"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnKaryawan"
+        android:layout_width="55dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/imgBg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="221dp"
+        android:background="@drawable/booking2"
+        android:drawablePadding="-40dp"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textjudul"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="259dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Customer"
+        android:textColor="@color/hijau"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/textjudulvil"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="130dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Villa"
+        android:textColor="@color/hijau"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/textjudulFal"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="543dp"
+        android:layout_marginEnd="68dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Fasilitas"
+        android:textColor="@color/hijau"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/textjudulBoo"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="700dp"
+        android:layout_marginEnd="128dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Booking"
+        android:textColor="@color/hijau"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/textjudulP"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="258dp"
+        android:layout_marginTop="699dp"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Pembersihan"
+        android:textColor="@color/hijau"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/textjudulKF"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="698dp"
+        android:layout_marginEnd="256dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Pengelolaan"
+        android:textColor="@color/hijau"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/textjudulRom"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="253dp"
+        android:layout_marginTop="444dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Room"
+        android:textColor="@color/hijau"
+        android:textSize="11dp" />
+
+
+    <TextView
+        android:id="@+id/karyawan"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="544dp"
+        android:layout_marginEnd="194dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="Karyawan"
+        android:textColor="@color/hijau"
+        android:textSize="11dp" />
+
+    <Button
+        android:id="@+id/btnInput"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="605dp"
+        android:background="@drawable/radius_button"
+        android:drawablePadding="-40dp"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="20dp"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

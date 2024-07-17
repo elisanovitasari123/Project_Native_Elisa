@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgkf3">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:text="Tambah Data"
+        android:textAlignment="center"
+        android:textColor="@color/hijau"
+        android:textSize="30sp" />
+
+    <!-- Customer Name and Spinner -->
+    <!-- Room Name and Spinner -->
+    <!-- Room Name and Spinner -->
+
+
+    <!-- Total Price -->
+
+    <!-- Button for Submitting Booking -->
+
+    <LinearLayout
+        android:id="@+id/villaLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="39dp"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/namaVilla"
+            android:layout_width="298dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+
+            android:gravity="start|center_vertical"
+            android:hint="Nama Villa"
+            android:padding="16dp"
+            android:textColor="@color/hijau" />
+
+        <Spinner
+            android:id="@+id/villaSpinner"
+            android:layout_width="16dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/down2"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/roomLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="104dp"
+        android:layout_below="@id/villaLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-28dp"
+        android:layout_marginEnd="35dp"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/nama_fasilitas"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+
+            android:gravity="start|center_vertical"
+            android:hint="Nama Fasilitas"
+            android:padding="16dp"
+            android:textColor="@color/hijau" />
+
+        <Spinner
+            android:id="@+id/fasilitasSpinner"
+            android:layout_width="16dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/down2"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/roomLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/roomLayout5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-29dp"
+        android:layout_marginEnd="34dp"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/namaKamar"
+            android:layout_width="295dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+
+            android:gravity="start|center_vertical"
+            android:hint="Jenis Kamar"
+            android:padding="16dp"
+            android:textColor="@color/hijau" />
+
+        <Spinner
+            android:id="@+id/spinner_namaKamar"
+            android:layout_width="16dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/down2"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/status_fasilitas"
+        android:layout_width="297dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/roomLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="60dp"
+        android:hint="Status"
+        android:padding="16dp"
+        android:text=""
+        android:textColor="@color/hijau" />
+
+    <Button
+        android:id="@+id/saveK"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_fasilitas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="57dp"
+        android:background="@drawable/radius_button"
+        android:padding="16dp"
+        android:text="Simpan Data"
+        android:textColor="@android:color/white" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/check_out_dateCalender"-->
+<!--        android:layout_width="43dp"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:layout_marginEnd="328dp"-->
+<!--        android:layout_marginBottom="846dp"-->
+<!--        android:background="@drawable/calendar"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="false"-->
+<!--        android:inputType="none"-->
+<!--        android:padding="16dp"-->
+<!--        android:textColor="@color/lavender" />-->
+</RelativeLayout>
